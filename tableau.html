@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-  </head>
-  <body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+</head>
+<body>
+    <header>
+        <img src="Jarditou/asset/img/jarditou_logo.jpg" alt="jarditou logo" width="500" height="150">
+    </header>
+    
+        La qualité depuis 70 ans
+    <nav>
+    <ul> 
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="tableau.html">Tableau</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul> 
+        <img src="Jarditou/asset/img/promotion.jpg" alt="jaditou promo">  
+      <section><h2>Tableau</h2></section><hr>
+    </nav>
     <table>
-      <caption>
-        Tableau
-      </caption>
-      <thead></thead>
       <tr>
-        <td></td>
-        <td>Photo</td>
-        <td>ID</td>
-        <td>Catégorie</td>
-        <td>Libellé</td>
-        <td>Prix</td>
-        <td>Couleur</td>
+        <td><h3>Photo</h3></td>
+        <td><h3>ID</h3></td>
+        <td><h3>Catégorie</h3></td>
+        <td><h3>Libellé</h3></td>
+        <td><h3>Prix</h3></td>
+        <td><h3>Couleur</h3></td>
       </tr>
       <tr>
         <td>
-          <img
-            src="Jarditou/jarditou_html_zip/jarditou_photos/7.jpg"
-            width="100"
-            height="100"
-          />
+          <img src="Jarditou/asset/img/7.jpg" alt="jarditou 7" height="100" width="100">
         </td>
         <td>7</td>
         <td>Barbecues</td>
@@ -37,11 +42,7 @@
 
       <tr>
         <td>
-          <img
-            src="Jarditou/jarditou_html_zip/jarditou_photos/8.jpg"
-            width="100"
-            height="100"
-          />
+         <img src="Jarditou/asset/img/8.jpg" alt="jarditou 8" width="100" height="100">
         </td>
         <td>8</td>
         <td>Barbecues</td>
@@ -51,11 +52,7 @@
       </tr>
       <tr>
         <td>
-          <img
-            src="Jarditou/jarditou_html_zip/jarditou_photos/11.jpg"
-            width="100"
-            height="100"
-          />
+         <img src="Jarditou/asset/img/11.jpg" alt="jarditou 11" width="100" height="100">
         </td>
         <td>11</td>
         <td>Barbecues</td>
@@ -63,13 +60,10 @@
         <td>135.90$</td>
         <td>chrome</td>
       </tr>
-      <tr>
+      <tr>    
+        
         <td>
-          <img
-            src="Jarditou/jarditou_html_zip/jarditou_photos/12.jpg"
-            width="100"
-            height="100"
-          />
+          <img src="Jarditou/asset/img/12.jpg" alt="jarditou 12" width="100" height="100">
         </td>
         <td>12</td>
         <td>Barbecues</td>
@@ -79,11 +73,7 @@
       </tr>
       <tr>
         <td>
-          <img
-            src="Jarditou/jarditou_html_zip/jarditou_photos/13.jpg"
-            width="100"
-            height="100"
-          />
+          <img src="Jarditou/asset/img/13.jpg" alt="jarditou 13" width="100" height="100">
         </td>
         <td>13</td>
         <td>Brouette</td>
@@ -92,36 +82,15 @@
         <td>Verte</td>
       </tr>
     </table>
+    <hr>
+    <footer>
+      <ul> 
+          <li><a href="">Mention légales</a></li>
+          <li><a href="">Horaires</a></li>
+          <li><a href="">Plan du site</a></li>
+          </ul>
+
+  </footer>
     
-    <div>
-    <p>*Ces Zones sont obligatoires</p>
-    <fieldset>Vos Coordonnées <br>
-    <label for="nom">Votre nom*:</label><input type="text" name="nom"><br>
-    <label for="prenom">Votre prenom*:</label><input type="text" name="prenom"><br>
-    <label for="nom">Sexe*:</label><input type="radio" name="Sexe">Féminin
-    <input type="radio" name="Sexe">Masculin <br>
-    <label for="prenom">Date De Naissance*:</label><input type="date" name="date"><br>
-    <label for="prenom">Code Postal*:</label><input type="text" name="cp"><br>
-    <label for="prenom">Adresse*:</label><input type="text" name="Adresse"><br>
-    <label for="prenom">Ville*:</label><input type="text" name="Ville"><br>
-    <label for="prenom">Email*:</label><input type="email" name="email" placeholder="dave.loper@afpa.fr" pattern="^[a-z]+$" required="dave.loper@afpa.fr"><br>
-    </fieldset>
-    <fieldset>Votre Demande <br>
-        <label for="Question">Sujet*:</label>
-        <select id="Question">
-         <option value="1">Veuillez séléctionner un sujet</option>
-         <option value="2">Mes commandes</option>
-         <option value="3">Question sur un produit</option>
-         <option value="4">Réclamation</option>
-         <option value="5">Autres</option>
-        
-        </select>
-        <br><label for="Question">Votre Question*:</label><textarea name="Question" cols="10" rows="5"></textarea>
-        <br><label for="Formulaire"></label><input type="checkbox" name="Formulaire" >*J'accepte le traitement informatique de ce formulaire<br>
-        </fieldset>
-        <button type="submit">Envoyer</button>
-        <button type="submit">Annuler</button>
-    </form>
-    </div>  
 </body>
 </html>
