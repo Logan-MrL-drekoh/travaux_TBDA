@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
         alt="jarditou logo"
         width="500"
         height="150"
-      />
+      >
     </header>
 
     La qualité depuis 70 ans
@@ -25,37 +25,37 @@
     </nav>
     <section>
       <div class="img">
-        <img src="Jarditou/asset/img/promotion.jpg" alt="jarditou promo" />
+        <img src="Jarditou/asset/img/promotion.jpg" alt="jarditou promo" >
       </div>
       <h2>Contact</h2>
-      <hr />
+      <hr>
 
       <form action="http://bienvu.net/script.php" method="get">
         <div>
           <p>*Ces Zones sont obligatoires</p>
           <fieldset>
-            Vos Coordonnées <br /><br />
+            Vos Coordonnées <br><br>
             <label for="nom">Votre nom*:</label
             ><input
               type="text"
               name="nom"
               placeholder="Entrez votre nom"
-              pattern="text"
+              pattern="^[A-z]+$"
               required="required"
               id="nom"
-            /><br />
-            <br />
+            /><br>
+            <br>
             <label for="prenom">Votre prenom*:</label
             ><input
               type="text"
               name="prenom"
               placeholder="Entrez votre prenom"
-              pattern="text"
+              pattern="^[A-z]+$"
               required="required"
               id="prenom"
-            /><br />
-            <br />
-            <label for="nom">Sexe*:</label
+            /><br>
+            <br>
+            <label for="Sexe">Sexe*:</label
             ><input
               type="radio"
               name="Sexe"
@@ -63,46 +63,46 @@
               id="Sexe"
             />Féminin
             <input type="radio" name="Sexe" required="required" />Masculin
-            <br />
-            <br />
+            <br>
+            <br>
             <label for="date">Date De Naissance*:</label
             ><input
               type="date"
               name="date"
               required="required"
               id="date"
-            /><br />
-            <br />
+            /><br>
+            <br>
             <label for="postal">Code Postal*:</label
             ><input
-              type="text"
-              name="cp"
-              placeholder="Entrre votre Code Postal"
-              pattern="text"
+              type="number"
+              name="postal"
+              placeholder="Entrez votre Code Postal"
+              
               required="required"
               id="postal"
-            /><br />
-            <br />
+            /><br>
+            <br>
             <label for="adresse">Adresse*:</label
             ><input
               type="text"
               name="Adresse"
               placeholder="Entrez votre adresse"
-              pattern="text"
+              pattern="^[A-z]+$+[0-9]"
               required="required"
               id="adresse"
-            /><br />
-            <br />
+            /><br>
+            <br>
             <label for="ville">Ville*:</label
             ><input
               type="text"
               name="Ville"
               placeholder="Entrez votre ville"
-              pattern="text"
+              pattern="^[A-z]+$"
               required="required"
               id="ville"
-            /><br />
-            <br />
+            /><br>
+            <br>
             <label for="email">Email*:</label
             ><input
               type="email"
@@ -111,11 +111,11 @@
               pattern="email"
               required="required"
               id="email"
-            /><br />
+            /><br>
           </fieldset>
           <fieldset>
-            Votre Demande <br />
-            <br />
+            Votre Demande <br>
+            <br>
             <label for="Question" id="sujet">Sujet*:</label>
             <select id="Question">
               <option value="1">Veuillez séléctionner un sujet</option>
@@ -124,29 +124,29 @@
               <option value="4">Réclamation</option>
               <option value="5">Autres</option>
             </select>
-            <br />
-            <br /><label for="Question">Votre Question*:</label
+            <br>
+            <br><label for="Question">Votre Question*:</label
             ><textarea
               name="Question"
               cols="10"
               rows="5"
               required="required"
             ></textarea>
-            <br />
-            <br /><label for="formulaire"></label
+            <br>
+            <br><label for="formulaire"></label
             ><input
               type="checkbox"
               name="Formulaire"
               required="required"
               id="formulaire"
-            />*J'accepte le traitement informatique de ce formulaire<br />
+            />*J'accepte le traitement informatique de ce formulaire<br>
           </fieldset>
           <br />
           <button type="submit">Envoyer</button>
           <button type="reset">Annuler</button>
         </div>
       </form>
-      <hr />
+      <hr>
     </section>
     <footer>
       <ul>

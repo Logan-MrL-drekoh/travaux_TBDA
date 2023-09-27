@@ -1,0 +1,59 @@
+body{
+    background-color: #ffffcc;
+    margin-left: 100px;
+}
+
+h1{
+    text-align: center;
+    font-size: 48pt;
+    color: #ff0000;
+    font-style: italic;
+    
+}
+
+hr{
+    border-bottom: solid thick black;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: Arial;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
+
+}
+
+
+div .end{
+    border-bottom: solid thick black
+}
+
+
+p {
+    text-align: center;
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: Arial;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
+    color: blue;
+    
+}
+
+nav a:hover{
+color:red;
+margin-bottom: auto;
+
+}
+
+footer a:hover{
+    color: red;
+}
+
+img{
+    margin:auto ;
+
+}
