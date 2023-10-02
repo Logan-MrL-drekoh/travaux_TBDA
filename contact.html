@@ -1,159 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Jarditou/asset/css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="Jarditou/asset/css/resposive.css">
+  <head><!--il contient la meta utf8 et les lien entre le css max width & le css media 768px-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Jarditou/asset/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="Jarditou/asset/css/resposive.css"
+    />
     <title>Contact</title>
   </head>
   <body>
-    <header>
+    <header><!--Contient le logo du site et le Slogan-->
       <img
-      class="logo"
+        id="logo"
         src="Jarditou/asset/img/jarditou_logo.png"
         alt="jarditou logo"
-      >
-      <p class="slogan">Tout le jardin</p>
+      />
+      <p id="slogan">Tout le jardin</p>
     </header>
 
-    <nav>
+    <nav><!--Menu de navigation entre les differene pages & la banniere-->
       <ul class="nav-links">
         <li><a class="link" href="index.html">Acceuil</a></li>
         <li><a class="link" href="tableau.html">Tableau</a></li>
         <li><a class="link" href="contact.html">Formulaire</a></li>
       </ul>
-      <img class="promo" src="Jarditou/asset/img/promotion.jpg" alt="jarditou promo" >
+      <a href="#"
+        ><img 
+        id="promo" 
+        src="Jarditou/asset/img/promotion.jpg" 
+        alt="promo"
+      /></a>
     </nav>
-    <div id="container">
-    <section class="sec">
-      
-      <h2>Contact</h2>
-      <hr>
-  <form action="http://bienvu.net/script.php" method="get">
-        <div>
-          <p>*Ces Zones sont obligatoires</p>
-          <fieldset>
-            <legend>Vos Coordonnées</legend><br><br>
-            <label for="nom">Votre nom*:</label
-            ><input
-              type="text"
-              name="nom"
-              placeholder="Entrez votre nom"
-              pattern="^[A-z]+$"
-              required="required"
-              id="nom"
-            /><br>
-            <br>
-            <label for="prenom">Votre prenom*:</label
-            ><input
-              type="text"
-              name="prenom"
-              placeholder="Entrez votre prenom"
-              pattern="^[A-z]+$"
-              required="required"
-              id="prenom"
-            /><br>
-            <br>
-            <label for="Sexe">Sexe*:</label
-            ><input
-              type="radio"
-              name="Sexe"
-              required="required"
-              id="Sexe"
-            />Féminin
-            <input type="radio" name="Sexe" required="required" />Masculin
-            <br>
-            <br>
-            <label for="date">Date De Naissance*:</label
-            ><input
-              type="date"
-              name="date"
-              required="required"
-              id="date"
-            /><br>
-            <br>
-            <label for="postal">Code Postal*:</label
-            ><input
-              type="number"
-              name="postal"
-              placeholder="Entrez votre Code Postal"
-              
-              required="required"
-              id="postal"
-            /><br>
-            <br>
-            <label for="adresse">Adresse*:</label
-            ><input
-              type="text"
-              name="Adresse"
-              placeholder="Entrez votre adresse"
-              pattern="^[A-z]+$+[0-9]"
-              required="required"
-              id="adresse"
-            /><br>
-            <br>
-            <label for="ville">Ville*:</label
-            ><input
-              type="text"
-              name="Ville"
-              placeholder="Entrez votre ville"
-              pattern="^[A-z]+$"
-              required="required"
-              id="ville"
-            /><br>
-            <br>
-            <label for="email">Email*:</label
-            ><input
-              type="email"
-              name="email"
-              placeholder="Entrez votre Email"
-              pattern="email"
-              required="required"
-              id="email"
-            /><br>
-          </fieldset>
-          <fieldset>
-            <legend>Votre Demande</legend><br>
-            <br>
-            <label for="Question" id="sujet">Sujet*:</label>
-            <select id="Question">
-              <option value="1">Veuillez séléctionner un sujet</option>
-              <option value="2">Mes commandes</option>
-              <option value="3">Question sur un produit</option>
-              <option value="4">Réclamation</option>
-              <option value="5">Autres</option>
-            </select>
-            <br>
-            <br><label for="Question">Votre Question*:</label
-            ><textarea
-              name="Question"
-              cols="10"
-              rows="5"
-              required="required"max-width: 100%;
-              max-height: 100%;
-            ></textarea>
-            <br>
-            <br><label for="formulaire"></label
-            ><input
-              type="checkbox"
-              name="Formulaire"
-              required="required"
-              id="formulaire"
-            />*J'accepte le traitement informatique de ce formulaire<br>
-          </fieldset>
-          <br />
-          <button type="submit">Envoyer</button>
-          <button type="reset">Annuler</button>
-        </div>
-      </form>
-      <hr>
-    </section>
-    <aside>
-      <p>[COLONNE DROITE]</p>
-    </aside>
+    <div id="contact"><!--Ceci est une div contenant la section et l'aside-->
+      <section><!--Cette section contient le panel pour avoir un contact-->
+        <h2>Contact</h2>
+        <hr />
+        <form action="http://bienvu.net/script.php" method="get">
+          <div>
+            <p>*Ces Zones sont obligatoires</p>
+            <fieldset>
+              <legend>Vos Coordonnées</legend>
+              <br /><br />
+              <label for="nom">Votre nom*:</label
+              ><input
+                type="text"
+                name="nom"
+                placeholder="Entrez votre nom"
+                pattern="^[A-z]+$"
+                required="required"
+                id="nom"
+              /><br />
+              <br />
+              <label for="prenom">Votre prenom*:</label
+              ><input
+                type="text"
+                name="prenom"
+                placeholder="Entrez votre prenom"
+                pattern="^[A-z]+$"
+                required="required"
+                id="prenom"
+              /><br />
+              <br />
+              <label for="Sexe">Sexe*:</label
+              ><input
+                type="radio"
+                name="Sexe"
+                required="required"
+                id="Sexe"
+              />Féminin
+              <input type="radio" name="Sexe" required="required" />Masculin
+              <br />
+              <br />
+              <label for="date">Date De Naissance*:</label
+              ><input
+                type="date"
+                name="date"
+                required="required"
+                id="date"
+              /><br />
+              <br />
+              <label for="postal">Code Postal*:</label
+              ><input
+                type="number"
+                name="postal"
+                placeholder="Entrez votre Code Postal"
+                required="required"
+                id="postal"
+              /><br />
+              <br />
+              <label for="adresse">Adresse*:</label
+              ><input
+                type="text"
+                name="Adresse"
+                placeholder="Entrez votre adresse"
+                pattern="^[A-z]+$+[0-9]"
+                required="required"
+                id="adresse"
+              /><br />
+              <br />
+              <label for="ville">Ville*:</label
+              ><input
+                type="text"
+                name="Ville"
+                placeholder="Entrez votre ville"
+                pattern="^[A-z]+$"
+                required="required"
+                id="ville"
+              /><br />
+              <br />
+              <label for="email">Email*:</label
+              ><input
+                type="email"
+                name="email"
+                placeholder="Entrez votre Email"
+                pattern="email"
+                required="required"
+                id="email"
+              /><br />
+            </fieldset>
+            <fieldset>
+              <legend>Votre Demande</legend>
+              <br />
+              <br />
+              <label for="Question" id="sujet">Sujet*:</label>
+              <select id="Question">
+                <option value="1">Veuillez séléctionner un sujet</option>
+                <option value="2">Mes commandes</option>
+                <option value="3">Question sur un produit</option>
+                <option value="4">Réclamation</option>
+                <option value="5">Autres</option>
+              </select>
+              <br />
+              <br /><label for="Question">Votre Question*:</label
+              ><textarea
+                name="Question"
+                cols="10"
+                rows="5"
+                required="required"
+                max-width:
+                100%;
+                max-height:
+                100%;
+              ></textarea>
+              <br />
+              <br /><label for="formulaire"></label
+              ><input
+                type="checkbox"
+                name="Formulaire"
+                required="required"
+                id="formulaire"
+              />*J'accepte le traitement informatique de ce formulaire<br />
+            </fieldset>
+            <br />
+            <button type="submit">Envoyer</button>
+            <button type="reset">Annuler</button>
+          </div>
+        </form>
+        <hr />
+      </section>
+      <aside></aside><!--Ceci est l'aside ne doit pas etre visble avec media responsive 768px -->
     </div>
-    <footer>
+    <footer><!--Ceci est un bas de page il contiont d'autres informations du site (mention,horaires, plan du site)-->
       <ul class="nav-links">
         <li><a class="link" href="#">Mention légales</a></li>
         <li><a class="link" href="#">Horaires</a></li>

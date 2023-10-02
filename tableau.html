@@ -1,131 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head><!--il contient la meta utf8 et les lien entre le css max width & le css media 768px-->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
-    <link rel="stylesheet" href="Jarditou/asset/css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="Jarditou/asset/css/resposive.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="Jarditou/asset/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="Jarditou/asset/css/resposive.css"
+    />
     <title>Acceuil</title>
   </head>
   <body>
-    <header>
+    <header><!--Contient le logo du site et le Slogan-->
       <img
-        class="logo"
+        id="logo"
         src="Jarditou/asset/img/jarditou_logo.png"
         alt="jarditou logo"
       />
-      <p class="slogan">Tout le jardin</p>
+      <p id="slogan">Tout le jardin</p>
     </header>
 
-    <nav>
+    <nav><!--Menu de navigation entre les differene pages & la banniere-->
       <ul class="nav-links">
         <li><a class="link" href="index.html">Acceuil</a></li>
         <li><a class="link" href="tableau.html">Tableau</a></li>
         <li><a class="link" href="contact.html">Formulaire</a></li>
       </ul>
-      <img class="promo" src="Jarditou/asset/img/promotion.jpg" alt="jaditou promo" />
-      <h2>Tableau</h2>
-      
+      <a href="#">
+        <img 
+        id="promo" 
+        src="Jarditou/asset/img/promotion.jpg" 
+        alt="promo"
+      /></a>
     </nav>
-    <div id="container">
-    <section class="sec">
-    <table>
-      <tr>
-        <td><h3>Photo</h3></td>
-        <td><h3>ID</h3></td>
-        <td><h3>Catégorie</h3></td>
-        <td><h3>Libellé</h3></td>
-        <td><h3>Prix</h3></td>
-        <td><h3>Couleur</h3></td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="Jarditou/asset/img/7.jpg"
-            alt="jarditou 7"
-            height="100"
-            width="100"
-          />
-        </td>
-        <td>7</td>
-        <td>Barbecues</td>
-        <td>Aramis</td>
-        <td>110.00$</td>
-        <td>brun</td>
-      </tr>
+    <section id="tableau"><!--Ceci est le tableau des élements il contient les photos et tous ce qui concerne definitions-->
+      <h2>Tableau</h2>
+      <table>
+        <tr>
+          <td><h3>Photo</h3></td>
+          <td><h3>ID</h3></td>
+          <td><h3>Catégorie</h3></td>
+          <td><h3>Libellé</h3></td>
+          <td><h3>Prix</h3></td>
+          <td><h3>Couleur</h3></td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="Jarditou/asset/img/7.jpg"
+              alt="jarditou 7"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td>7</td>
+          <td>Barbecues</td>
+          <td>Aramis</td>
+          <td>110.00$</td>
+          <td>brun</td>
+        </tr>
 
-      <tr>
-        <td>
-          <img
-            src="Jarditou/asset/img/8.jpg"
-            alt="jarditou 8"
-            width="100"
-            height="100"
-          />
-        </td>
-        <td>8</td>
-        <td>Barbecues</td>
-        <td>Athos</td>
-        <td>249.99$</td>
-        <td>noir</td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="Jarditou/asset/img/11.jpg"
-            alt="jarditou 11"
-            width="100"
-            height="100"
-          />
-        </td>
-        <td>11</td>
-        <td>Barbecues</td>
-        <td>Clatronic</td>
-        <td>135.90$</td>
-        <td>chrome</td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="Jarditou/asset/img/12.jpg"
-            alt="jarditou 12"
-            width="100"
-            height="100"
-          />
-        </td>
-        <td>12</td>
-        <td>Barbecues</td>
-        <td>Camping</td>
-        <td>88.00$</td>
-        <td>noir</td>
-      </tr>
-      <tr>
-        <td>
-          <img
-            src="Jarditou/asset/img/13.jpg"
-            alt="jarditou 13"
-            width="100"
-            height="100"
-          />
-        </td>
-        <td>13</td>
-        <td>Brouette</td>
-        <td>green</td>
-        <td>49.00$</td>
-        <td>Verte</td>
-      </tr>
-    </table>
+        <tr>
+          <td>
+            <img
+              src="Jarditou/asset/img/8.jpg"
+              alt="jarditou 8"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td>8</td>  <!--Menu de navigation entre les differene pages & la banniere-->
+          <td>Barbecues</td>
+          <td>Athos</td>
+          <td>249.99$</td>
+          <td>noir</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="Jarditou/asset/img/11.jpg"
+              alt="jarditou 11"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td>11</td>
+          <td>Barbecues</td>
+          <td>Clatronic</td>
+          <td>135.90$</td>
+          <td>chrome</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="Jarditou/asset/img/12.jpg"
+              alt="jarditou 12"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td>12</td>
+          <td>Barbecues</td>
+          <td>Camping</td>
+          <td>88.00$</td>
+          <td>noir</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="Jarditou/asset/img/13.jpg"
+              alt="jarditou 13"
+              width="100"
+              height="100"
+            />
+          </td>
+          <td>13</td>
+          <td>Brouette</td>
+          <td>green</td>
+          <td>49.00$</td>
+          <td>Verte</td>
+        </tr>
+      </table>
     </section>
-    <aside>
-      <p>[COLONNE DROITE]</p>
-    </aside>
-    </div>
-    <footer>
-    <ul class="nav-links">
+    <aside></aside>
+
+    <footer><!--Ceci est un bas de page il contiont d'autres informations du site (mention,horaires, plan du site)-->
+      <ul class="nav-links">
         <li><a class="link" href="">Mention légales</a></li>
         <li><a class="link" href="">Horaires</a></li>
         <li><a class="link" href="">Plan du site</a></li>
       </ul>
     </footer>
-</body>
+  </body>
 </html>

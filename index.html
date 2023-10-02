@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head><!--il contient la meta utf8 et les lien entre le css max width & le css media 768px-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Jarditou/asset/css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="Jarditou/asset/css/resposive.css">
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="Jarditou/asset/css/resposive.css"
+    />
     <title>Acceuil</title>
   </head>
+
   <body>
-    <header>
-      
-        <img class="logo" src="Jarditou/asset/img/jarditou_logo.png"
-        alt="img"
-      />
-      <p class="slogan">Tout le jardin</p>
+    <header><!--Contient le logo du site et le Slogan-->
+      <img id="logo" src="Jarditou/asset/img/jarditou_logo.png" alt="logo" />
+      <!--Ceci est le logo-->
+
+      <p id="slogan">Tout le jardin</p>
+      <!--Cei est le Slogan-->
     </header>
-  <nav>
+    <nav><!--Menu de navigation entre les differene pages & la banniere-->
       <ul class="nav-links">
         <li><a class="link" title="Acceuil" href="index.html">Acceuil</a></li>
         <li><a class="link" title="Tableau" href="tableau.html">Tableau</a></li>
-        <li><a class="link" title="Contact" href="contact.html">Formulaire</a></li>
+        <li>
+          <a class="link" title="Contact" href="contact.html">Formulaire</a>
+        </li>
       </ul>
-      <img class="promo" src="Jarditou/asset/img/promotion.jpg" alt="jarditou promo" />
+      <a href="#"
+        ><img 
+        id="promo" 
+        src="Jarditou/asset/img/promotion.jpg" 
+        alt="promo"
+      /></a>
     </nav>
-    <div id="container">
-    <section class="sec">
-      
-      <h1>Acceuil</h1>
-      <article class="para1">
+    <div id="container"><!--Ceci est une div contenant la section et l'aside-->
+    <section class="text"><!--Ceci est une section qui contient 3 articles  et 3 titres h2-->
+       
+
+        <h1>Acceuil</h1>
+        <article>
+          <!--Premier article-->
           <h2>L'entreprise</h2>
-          <div class="ent">
-          <p class="texte">
-          Notre entreprise familiale met tout son savoir-faire à votre
-          disposition dans le domaine du jardin et du paysagisme.
-        Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel
-          à main et motorisés.
-          Implantés à Amiens, nous intervenons dans tout le département de la
-          Somme : Albert, Doullens, Péronne, Abbeville, Corbie
-        </p>
-      </div>
-      width: 100%;
-    </article>
-      <div class="qua">
-        <article class="para2"><h2>Qualité</h2>
-        <p class="texte">
-          Nous mettons à votre disposition un service personnalisé, avec 1 seul
-          interlocuteur durant tout votre projet. 
-          Vous serez séduit par notre expertise, nos compétences et notre
-          sérieux. 
-        </p>
-      </div>
-      
-      </article>
-      <div class="dev">  
-      <article class="para3"><h2>Devis gratuit</h2>
-        <p class="texte">
-          Vous pouvez bien sûr contacter pour de plus amples informations ou
-          pour une demande d’intervention. Vous souhaitez un devis ? Nous vous
-          le réalisons gratuitement.
-        </p>
+          <p>
+            Notre entreprise familiale met tout son savoir-faire à votre
+            disposition dans le domaine du jardin et du paysagisme. Créée il y a
+            70 ans, notre entreprise vend fleurs, arbustes, matériel à main et
+            motorisés. Implantés à Amiens, nous intervenons dans tout le
+            département de la Somme : Albert, Doullens, Péronne, Abbeville,
+            Corbie
+          </p>
         </article>
-      </div>
-        
+
+        <article>
+          <!--Second Article-->
+          <h2>Qualité</h2>
+          <p>
+            Nous mettons à votre disposition un service personnalisé, avec 1
+            seul interlocuteur durant tout votre projet. Vous serez séduit par
+            notre expertise, nos compétences et notre sérieux.
+          </p>
+        </article>
+
+        <article>
+          <!--Troisième article-->
+          <h2>Devis gratuit</h2>
+          <p>
+            Vous pouvez bien sûr contacter pour de plus amples informations ou
+            pour une demande d’intervention. Vous souhaitez un devis ? Nous vous
+            le réalisons gratuitement.
+          </p>
+        </article>
       </section>
-      <aside>
-        <p>[COLONNE DROITE]</p>
+      <aside><!--Ceci est l'aside ne doit pas etre visble avec media responsive 768px -->
       </aside>
     </div>
-    <footer>
+    <footer><!--Ceci est un bas de page il contiont d'autres informations du site (mention,horaires, plan du site)-->
       <ul class="nav-links">
         <li><a class="link" href="#">Mention légales</a></li>
         <li><a class="link" href="#">Horaires</a></li>
@@ -76,4 +85,3 @@
     </footer>
   </body>
 </html>
-
