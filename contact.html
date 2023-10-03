@@ -35,15 +35,15 @@
       /></a>
     </nav>
     <div id="contact"><!--Ceci est une div contenant la section et l'aside-->
-      <section><!--Cette section contient le panel pour avoir un contact-->
-        <h2>Contact</h2>
+      <h2>Contact</h2>
+      <section id="formulaire"><!--Cette section contient le panel pour avoir un contact-->
         <hr />
         <form action="http://bienvu.net/script.php" method="get">
           <div>
             <p>*Ces Zones sont obligatoires</p>
             <fieldset>
               <legend>Vos Coordonnées</legend>
-              <br /><br />
+              
               <label for="nom">Votre nom*:</label
               ><input
                 type="text"
@@ -109,22 +109,20 @@
                 pattern="^[A-z]+$"
                 required="required"
                 id="ville"
-              /><br />
-              <br />
+              />
+              <br><br>
               <label for="email">Email*:</label
               ><input
                 type="email"
                 name="email"
                 placeholder="Entrez votre Email"
-                pattern="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 required="required"
                 id="email"
               /><br />
             </fieldset>
             <fieldset>
               <legend>Votre Demande</legend>
-              <br />
-              <br />
               <label for="Question" id="sujet">Sujet*:</label>
               <select id="Question">
                 <option value="1">Veuillez séléctionner un sujet</option>
@@ -152,11 +150,12 @@
                 name="Formulaire"
                 required="required"
                 id="formulaire"
+               
               />*J'accepte le traitement informatique de ce formulaire<br />
             </fieldset>
             <br />
-            <button type="submit">Envoyer</button>
-            <button type="reset">Annuler</button>
+            <button class="btn-contact" type="submit">Envoyer</button>
+            <button class="btn-contact" type="reset">Annuler</button>
           </div>
         </form>
         <hr />
