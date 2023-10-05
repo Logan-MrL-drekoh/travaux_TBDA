@@ -34,12 +34,14 @@
         alt="promo"
       /></a>
     </nav>
-    <div id="contact"><!--Ceci est une div contenant la section et l'aside-->
-      <h2>Contact</h2>
-      <section id="formulaire"><!--Cette section contient le panel pour avoir un contact-->
+    
+    <div id="container"><!--Ceci est une div contenant la section et l'aside-->
+      
+      <main><!--Cette section contient le panel pour avoir un contact-->
+        <h2>Contact</h2>
         <hr />
         <form action="http://bienvu.net/script.php" method="get">
-          <div>
+          
             <p>*Ces Zones sont obligatoires</p>
             <fieldset>
               <legend>Vos Coordonnées</legend>
@@ -137,12 +139,10 @@
                 name="Question"
                 cols="10"
                 rows="5"
-                required="required"
-                max-width:
-                100%;
-                max-height:
-                100%;
-              ></textarea>
+                required="required">
+              </textarea>
+               
+              
               <br />
               <br /><label for="formulaire"></label
               ><input
@@ -156,11 +156,14 @@
             <br />
             <button class="btn-contact" type="submit">Envoyer</button>
             <button class="btn-contact" type="reset">Annuler</button>
-          </div>
-        </form>
+          </form>
         <hr />
-      </section>
-      <aside></aside><!--Ceci est l'aside ne doit pas etre visble avec media responsive 768px -->
+        </main>
+
+      <aside>
+        Colonne de droite
+      </aside><!--Ceci est l'aside ne doit pas etre visble avec media responsive 768px -->
+    
     </div>
     <footer><!--Ceci est un bas de page il contiont d'autres informations du site (mention,horaires, plan du site)-->
       <ul class="nav-links">
@@ -168,6 +171,7 @@
         <li><a class="link" href="#">Horaires</a></li>
         <li><a class="link" href="#">Plan du site</a></li>
       </ul>
+    
     </footer>
   </body>
 </html>
